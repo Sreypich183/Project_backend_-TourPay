@@ -67,7 +67,7 @@ export default function Profile() {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      marginBottom: "15px",
+      marginBottom: "10px",
       background: "#2c2c2c",
       padding: "10px 15px",
       borderRadius: "10px",
