@@ -53,8 +53,6 @@ export default function Tourpay() {
     },
   };
 
-  
-
   return (
     <div style={styles.container}>
       <div style={styles.title}>Add</div>
