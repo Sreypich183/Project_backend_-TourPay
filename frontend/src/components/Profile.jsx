@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { FaApple, FaGoogle, FaFacebookF, FaEnvelope } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Profile() {
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("English");
+  const navigate = useNavigate();
 
   const styles = {
     container: {
@@ -43,21 +45,22 @@ export default function Profile() {
       alignItems: "center",
       gap: "10px",
       justifyContent: "center",
+      cursor: "pointer",
     },
     apple: {
       background: "#fff",
       color: "#000",
     },
     google: {
-      background: "#333",
+      backgroundColor: "#1a1a1a",
       color: "#fff",
     },
     facebook: {
-      background: "#333",
+      backgroundColor: "#1a1a1a",
       color: "#fff",
     },
     email: {
-      background: "#333",
+      backgroundColor: "#1a1a1a",
       color: "#fff",
     },
     section: {
@@ -68,7 +71,7 @@ export default function Profile() {
       justifyContent: "space-between",
       alignItems: "center",
       marginBottom: "10px",
-      background: "#2c2c2c",
+      backgroundColor: "#1a1a1a",
       padding: "10px 15px",
       borderRadius: "10px",
     },
@@ -107,16 +110,28 @@ export default function Profile() {
       </p>
 
       {/* Sign-in Buttons */}
-      <button style={{ ...styles.button, ...styles.apple }}>
+      <button
+        style={{ ...styles.button, ...styles.apple }}
+        onClick={() => navigate("/SignInWithApple")}
+      >
         <FaApple /> Sign in with Apple
       </button>
-      <button style={{ ...styles.button, ...styles.google }}>
+      <button
+        style={{ ...styles.button, ...styles.google }}
+        onClick={() => navigate("/SignInWithGoogle")}
+      >
         <FaGoogle /> Sign in with Google
       </button>
-      <button style={{ ...styles.button, ...styles.facebook }}>
+      <button
+        style={{ ...styles.button, ...styles.facebook }}
+        onClick={() => navigate("/SignInWithFacebook")}
+      >
         <FaFacebookF /> Sign in with Facebook
       </button>
-      <button style={{ ...styles.button, ...styles.email }}>
+      <button
+        style={{ ...styles.button, ...styles.email }}
+        onClick={() => navigate("/SignInWithEmail")}
+      >
         <FaEnvelope /> Sign in with Email
       </button>
 
