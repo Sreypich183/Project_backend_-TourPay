@@ -6,7 +6,7 @@ const Tour = require("../models/Tour");
 const User = require("../models/User");
 const { pool } = require("../config/database");
 
-// -------------------- Create --------------------
+// -------------------- Create Tour --------------------
 const createTour = async (req, res) => {
   try {
     const { title, currency, participants } = req.body;
@@ -53,7 +53,7 @@ const getUserTours = async (req, res) => {
   }
 };
 
-// -------------------- Get By ID --------------------
+// -------------------- Get Tour By ID --------------------
 const getTourById = async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
@@ -71,7 +71,7 @@ const getTourById = async (req, res) => {
   }
 };
 
-// -------------------- Join --------------------
+// -------------------- Join Tour --------------------
 const joinTour = async (req, res) => {
   try {
     const { inviteCode } = req.body;
@@ -93,7 +93,7 @@ const joinTour = async (req, res) => {
   }
 };
 
-// -------------------- Update --------------------
+// -------------------- Update Tour --------------------
 const updateTour = async (req, res) => {
   try {
     const { id } = req.params;
@@ -139,7 +139,7 @@ const updateTour = async (req, res) => {
   }
 };
 
-// -------------------- Delete --------------------
+// -------------------- Delete Tour --------------------
 const deleteTour = async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
@@ -154,7 +154,7 @@ const deleteTour = async (req, res) => {
   }
 };
 
-// -------------------- Archive --------------------
+// -------------------- Archive Tour --------------------
 const archiveTour = async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
@@ -169,7 +169,7 @@ const archiveTour = async (req, res) => {
   }
 };
 
-// -------------------- Insights --------------------
+// -------------------- Get Tour Insights --------------------
 const getTourInsights = async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
@@ -182,7 +182,7 @@ const getTourInsights = async (req, res) => {
   }
 };
 
-// -------------------- QR --------------------
+// -------------------- Generate Invite QR --------------------
 const generateInviteQR = async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
