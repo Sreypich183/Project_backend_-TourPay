@@ -65,4 +65,26 @@ npm install
 ```bash
 npm run dev
 ```
-  
+
+### 3. Frontend Setup
+- Install dependencies
+```bash
+cd backend
+npm install
+```
+- Start the frontend
+```bash
+npm run dev
+```
+The app should now be available at: http://localhost:5173
+
+## 📖 API Overview
+```bash
+POST /api/auth/register – Register new user
+POST /api/auth/login – Login & get JWT
+GET /api/users/me – Get current user info
+POST /api/tours – Create tour
+GET /api/tours/:id – Get tour details
+POST /api/expenses – Add expense to tour
+GET /api/expenses/:tourId – List tour expenses
+```
