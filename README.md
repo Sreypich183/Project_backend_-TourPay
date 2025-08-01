@@ -31,8 +31,11 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 4. Ensure full local development works via:
 
 ```bash
+// For Backend
 cd backend
 npm install
 
+// For Frontend
 cd frontend
 npm install
+
