@@ -222,4 +222,4 @@ async getInsights() {
   }
 }
 
-module.exports = Tour
+module.exports = Tour;
