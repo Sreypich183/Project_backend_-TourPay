@@ -3,7 +3,18 @@
 TourPay is a collaborative expense-sharing platform built for group trips and shared tours. This backend powers all the APIs, authentication, tour expense logic, and user management for the platform.
 
 ---
+## ⚙️ Tech Stack
 
+| Layer     | Technology                             |
+|-----------|----------------------------------------|
+| Frontend  | React 18, Vite, Redux Toolkit, Tailwind CSS |
+| Backend   | Node.js, Express.js, JWT               |
+| Database  | PostgreSQL with Sequelize ORM          |
+| Storage   | Cloudinary (optional media uploads)    |
+| Auth      | JWT + planned social login (Google, Apple, Facebook) |
+| Dev Tools | ESLint, Prettier, Nodemon              |
+
+---
 ## 🧱 Project Structure 
 
 ## 🔧 Features in This Setup
