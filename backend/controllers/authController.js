@@ -2,6 +2,7 @@ const User = require("../models/User")
 const { generateToken } = require("../config/jwt")
 const { validationResult } = require("express-validator")
 
+// -------------------- Register --------------------
 const register = async (req, res) => {
   try {
     console.log("Registration attempt:", req.body.email)
@@ -40,8 +41,9 @@ const register = async (req, res) => {
     console.error("Registration error:", error)
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Logic --------------------
 const login = async (req, res) => {
   try {
     console.log("Login attempt:", req.body.email)
@@ -83,8 +85,9 @@ const login = async (req, res) => {
     console.error("Login error:", error)
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Get Profile --------------------
 const getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.userId)
@@ -107,10 +110,10 @@ const getProfile = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
 module.exports = {
   register,
   login,
   getProfile,
-}
+};
