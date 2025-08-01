@@ -30,9 +30,6 @@ app.use(
 
 app.use(express.json());
 
-// Serve uploads folder (for uploaded images/photos)
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-
 // Log every request
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.path}`, req.body);
