@@ -1,4 +1,4 @@
-require("dotenv").config();  // Always load env first
+require("dotenv").config();  
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -20,7 +20,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? ["https://your-frontend-domain.com"]   // ✅ Replace with real domain
+        ? ["https://your-frontend-domain.com"]  
         : ["http://localhost:3000"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
@@ -29,8 +29,6 @@ app.use(
 );
 
 app.use(express.json());
-// Optionally: if you accept form data too
-// app.use(express.urlencoded({ extended: true }));
 
 // Serve uploads folder (for uploaded images/photos)
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
@@ -70,5 +68,5 @@ app.use((err, req, res, next) => {
 // ---------------- Start server ----------------
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT} (${process.env.NODE_ENV})`);
+  console.log(`Server running on port ${PORT} (${process.env.NODE_ENV})`);
 });
