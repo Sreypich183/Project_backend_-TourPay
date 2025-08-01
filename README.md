@@ -138,7 +138,29 @@ GET /api/expenses/:tourId – List tour expenses
 - **React 18**: Latest React with concurrent features and improved performance
 - **Vite**: Fast build tool with HMR and optimized bundling
 - **Redux Toolkit**: Simplified state management with DevTools integration
-- **CSS**: Utility-first CSS framework for rapid UI development
+- - **CSS**: Utility-first CSS framework for rapid UI development
 - **Component Library**: Reusable, accessible components with consistent styling
+
+---
+
+## 🔄 Future Enhancements
+- Social login integration (Google, Facebook, Apple)
+- Dark/Light mode toggle for improved UX
+- Multi-language support for global users
+- Real-time notifications and chat between members
+- Payment gateway integration for settling balances
+- obile-friendly design and possible PWA support
+
+---
+
+## 📚 Resources & Documentation
+API Documentation (coming soon)
+Frontend User Guide (coming soon)
+Backend Developer Guide (coming soon)
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repo, create feature branches, and submit pull requests. Follow the code style and run tests before submitting.
 
 ---
