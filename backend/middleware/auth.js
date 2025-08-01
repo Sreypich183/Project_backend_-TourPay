@@ -1,6 +1,7 @@
 const { verifyToken } = require("../config/jwt")
 const User = require("../models/User")
 
+// -------------------- Authentication --------------------
 const auth = async (req, res, next) => {
   try {
     const token = req.header("Authorization")?.replace("Bearer ", "")
@@ -22,6 +23,6 @@ const auth = async (req, res, next) => {
   } catch (error) {
     res.status(401).json({ message: "Token is not valid" })
   }
-}
+};
 
-module.exports = auth
+module.exports = auth;
