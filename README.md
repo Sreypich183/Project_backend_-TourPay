@@ -83,6 +83,12 @@ cd backend
 npm install
 ```
 - Create .env
+```bash
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=your_password
+DB_NAME=tourpay_db
+```
 - Start the backend
 ```bash
 npm run dev
