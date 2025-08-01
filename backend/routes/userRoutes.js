@@ -7,4 +7,4 @@ const router = express.Router()
 router.put("/profile", auth, updateProfile)
 router.get("/search", auth, searchUsers)
 
-module.exports = router
+module.exports = router;
