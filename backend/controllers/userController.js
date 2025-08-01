@@ -1,6 +1,7 @@
 const User = require("../models/User")
 const { pool } = require("../config/database")
 
+// -------------------- Update Profile --------------------
 const updateProfile = async (req, res) => {
   try {
     const { name, preferences } = req.body
@@ -9,7 +10,6 @@ const updateProfile = async (req, res) => {
     if (name) updates.name = name
     if (preferences) {
       if (preferences.language) updates.language = preferences.language
-      if (preferences.darkMode) updates.dark_mode = preferences.darkMode
       if (preferences.currency) updates.currency = preferences.currency
     }
 
@@ -23,7 +23,6 @@ const updateProfile = async (req, res) => {
         email: user.email,
         preferences: {
           language: user.language,
-          darkMode: user.dark_mode,
           currency: user.currency,
         },
       },
@@ -31,8 +30,9 @@ const updateProfile = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Search Users --------------------
 const searchUsers = async (req, res) => {
   try {
     const { query } = req.query
@@ -50,9 +50,9 @@ const searchUsers = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
 module.exports = {
   updateProfile,
   searchUsers,
-}
+};
