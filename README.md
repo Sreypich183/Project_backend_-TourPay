@@ -17,10 +17,4 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 ---
 
 ## 📁 Project Structure
-backend/
-├── config/ # Database and JWT configs
-├── controllers/ # API logic for auth, tours, expenses
-├── middleware/ # Auth and validation middleware
-├── models/ # Sequelize models: User, Tour, Expense
-├── routes/ # Express routes for APIs
-├── server.js # Express server entry point
+
