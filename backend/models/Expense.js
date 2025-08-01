@@ -211,4 +211,5 @@ class Expense {
   }
 }
 
-module.exports = Expense
+module.exports = Expense;
+
