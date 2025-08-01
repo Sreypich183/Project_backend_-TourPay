@@ -112,3 +112,27 @@ GET /api/tours/:id – Get tour details
 POST /api/expenses – Add expense to tour
 GET /api/expenses/:tourId – List tour expenses
 ```
+
+---
+
+## 🔧 Technical Implementation Details
+
+### 📊 Database Architecture
+- **MySQL**: Chosen for ACID compliance, complex relationships, and performance
+- **Sequelize ORM**: Type-safe database operations with automatic validation
+- **Migration System**: Version-controlled schema changes for reliable deployments
+- **Seeding**: Automated test data generation for development and testing
+
+### 🔐 Authentication & Security
+- **JWT Tokens**: Stateless authentication with automatic refresh
+- **Password Hashing**: `bcrypt` for secure password storage
+- **API Security**: Rate limiting, CORS configuration, and input validation
+
+### 🎨 Frontend Architecture
+- **React 18**: Latest React with concurrent features and improved performance
+- **Vite**: Fast build tool with HMR and optimized bundling
+- **Redux Toolkit**: Simplified state management with DevTools integration
+- **CSS**: Utility-first CSS framework for rapid UI development
+- **Component Library**: Reusable, accessible components with consistent styling
+
+---
