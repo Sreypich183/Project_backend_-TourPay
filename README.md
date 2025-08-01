@@ -45,6 +45,28 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 ---
 
 ## 🗂 Project Structure
+```bash
+Project/
+├── backend/
+│ ├── server.js # Express app entry point
+│ ├── config/ # DB & JWT config
+│ ├── controllers/ # API logic
+│ ├── middleware/ # Auth, validation
+│ ├── models/ # Sequelize models
+│ └── routes/ # API route definitions
+├── frontend/
+│ ├── src/
+│ │ ├── app/ # Redux store & providers
+│ │ ├── components/ # UI components
+│ │ ├── features/ # Slices, services
+│ │ ├── pages/ # Page views
+│ │ ├── i18n/ # Translations
+│ │ └── main.jsx # Entry point
+│ └── vite.config.js
+└── README.md
+```
+
+---
 
 ## 🚀 Getting Started
 
@@ -77,6 +99,8 @@ npm install
 npm run dev
 ```
 The app should now be available at: http://localhost:5173
+
+---
 
 ## 📖 API Overview
 ```bash
