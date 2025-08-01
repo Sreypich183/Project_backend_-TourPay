@@ -154,9 +154,9 @@ GET /api/expenses/:tourId – List tour expenses
 ---
 
 ## 📚 Resources & Documentation
-API Documentation (coming soon)
-Frontend User Guide (coming soon)
-Backend Developer Guide (coming soon)
+- API Documentation (coming soon)
+- Frontend User Guide (coming soon)
+- Backend Developer Guide (coming soon)
 
 ---
 
