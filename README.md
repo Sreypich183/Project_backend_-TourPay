@@ -45,3 +45,24 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 ---
 
 ## 🗂 Project Structure
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-org/tourpay.git
+cd tourpay
+```
+
+### 2. Backend Setup
+- Install dependencies
+```bash
+cd backend
+npm install
+```
+- Create .env
+- Start the backend
+```bash
+npm run dev
+```
+  
