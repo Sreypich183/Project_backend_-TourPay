@@ -3,50 +3,45 @@
 TourPay is a collaborative expense-sharing platform built for group trips and shared tours. This backend powers all the APIs, authentication, tour expense logic, and user management for the platform.
 
 ---
+
 ## ⚙️ Tech Stack
 
 | Layer     | Technology                             |
 |-----------|----------------------------------------|
-| Frontend  | React 18, Vite, Redux Toolkit, Tailwind CSS |
+| Frontend  | React 18, Vite, CSS                    |
 | Backend   | Node.js, Express.js, JWT               |
-| Database  | PostgreSQL with Sequelize ORM          |
+| Database  | MySQL with Sequelize ORM               |
 | Storage   | Cloudinary (optional media uploads)    |
-| Auth      | JWT + planned social login (Google, Apple, Facebook) |
+| Auth      | JWT + login                            |
 | Dev Tools | ESLint, Prettier, Nodemon              |
 
 ---
-## 🧱 Project Structure 
 
-## 🔧 Features in This Setup
-### Backend
-- User Registration & JWT Login
-- Tour Management (Create, Join, Delete)
-- Add, Split & Track Expenses
-- Calculate Individual Balances
-- Secure Routes with JWT Middleware
-- RESTful API with Express.js
+## ✨ Features
 
-### Frontend
-- Login/Register UI
-- Tour dashboard
-- Add expense
-- Split & balance viewer
-- QR invite route 
-- Axios connection to backend
-- Auth protected routes (JWT)
+### Authentication
+- User registration & login (JWT-based)
+- Planned: logins
 
-## ⚙️ What I’ll Do Next
-1. Scaffold a working frontend (frontend/)
-2. Connect Axios to backend http://localhost:5000/api
-3. Add some sample pages & UI (login, dashboard, add expense)
-4. Ensure full local development works via:
+### Tours
+- Create and manage group tours
+- Invite members via QR code
+- Join tour functionality
 
-```bash
-// For Backend
-cd backend
-npm install
+### Expenses
+- Add expenses to tours
+- Split between members (equal or custom amounts)
+- Currency support
+- Real-time balance calculation (like Tricount or Splitwise)
 
-// For Frontend
-cd frontend
-npm install
+### 🌙 UX/UI
+- Responsive design
 
+### 🛠️ Under Development
+- Messaging between members
+- Payment integration 
+- Export PDF summaries
+
+---
+
+## 🗂 Project Structure
