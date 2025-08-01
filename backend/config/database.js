@@ -1,4 +1,3 @@
-// backend/config/database.js
 const mysql = require('mysql2');
 require('dotenv').config();
 
@@ -14,7 +13,6 @@ const pool = mysql.createPool({
 
 const promisePool = pool.promise();
 
-// ✅ define and export connectDB function
 const connectDB = async () => {
   try {
     await promisePool.query('SELECT 1');
@@ -27,5 +25,5 @@ const connectDB = async () => {
 
 module.exports = {
   pool: promisePool,
-  connectDB, // ✅ add this to your exports
+  connectDB,
 };
