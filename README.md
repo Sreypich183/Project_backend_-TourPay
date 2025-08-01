@@ -4,39 +4,19 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 
 ---
 
-## 🚀 Features
-
-- 👥 User Registration & JWT Login
-- ✈️ Create & Join Tours
-- 💸 Add, Split & Track Expenses
-- 📊 Real-Time TourPay Balancing
-- ✅ Validation & Auth Middleware
-- 🔐 Secure JWT Token Authentication
-- 🌐 RESTful API architecture
-
----
-
-## 📁 Project Structure
-
-
-
----
-
-## ⚙️ Tech Stack
-
-- **Backend**: Node.js, Express.js
-- **Database**: PostgreSQL
-- **ORM**: Sequelize
-- **Auth**: JSON Web Token (JWT)
-- **Validation**: express-validator
-
----
-
-## 🛠️ Local Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-org/tourpay-backend.git
-cd backend
-
+## 🧱 Project Structure 
+TourPay/
+├── backend/            ← Your existing Node + Express + PostgreSQL + Sequelize API
+│   └── (already extracted)
+├── frontend/           ← New React 18 + Vite + Tailwind + Redux frontend
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── features/
+│   │   ├── components/
+│   │   ├── services/   ← Axios + RTK Query config
+│   │   └── App.jsx
+│   ├── index.html
+│   ├── tailwind.config.js
+│   └── vite.config.js
+├── README.md           ← Root-level README
+└── package.json        ← Shared setup (optional)
