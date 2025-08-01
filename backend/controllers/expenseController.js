@@ -1,6 +1,7 @@
 const Expense = require("../models/Expense")
 const Tour = require("../models/Tour")
 
+// -------------------- Create Expense --------------------
 const createExpense = async (req, res) => {
   try {
     const { title, amount, description, category, tourId, splitBetween, date } = req.body
@@ -37,8 +38,9 @@ const createExpense = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Get Tour Expenses --------------------
 const getTourExpenses = async (req, res) => {
   try {
     const { tourId } = req.params
@@ -49,8 +51,9 @@ const getTourExpenses = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Update Expense --------------------
 const updateExpense = async (req, res) => {
   try {
     const { id } = req.params
@@ -74,8 +77,9 @@ const updateExpense = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
+// -------------------- Delete Expense --------------------
 const deleteExpense = async (req, res) => {
   try {
     const { id } = req.params
@@ -96,11 +100,11 @@ const deleteExpense = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message })
   }
-}
+};
 
 module.exports = {
   createExpense,
   getTourExpenses,
   updateExpense,
   deleteExpense,
-}
+};
