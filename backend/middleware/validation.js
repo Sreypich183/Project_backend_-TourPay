@@ -35,31 +35,35 @@ exports.validateLogin = [
     .notEmpty().withMessage("Password is required")
 ];
 
+// -------------------- Validate Register --------------------
 const validateRegister = [
   body("name").trim().isLength({ min: 2 }).withMessage("Name must be at least 2 characters"),
   body("email").isEmail().withMessage("Please provide a valid email"),
   body("password").isLength({ min: 6 }).withMessage("Password must be at least 6 characters"),
-]
+];
 
+// -------------------- Validate Login --------------------
 const validateLogin = [
   body("email").isEmail().withMessage("Please provide a valid email"),
   body("password").exists().withMessage("Password is required"),
-]
+];
 
+// -------------------- Validate Tour --------------------
 const validateTour = [
   body("title").trim().isLength({ min: 1 }).withMessage("Title is required"),
   body("currency").trim().isLength({ min: 3, max: 3 }).withMessage("Currency must be 3 characters"),
-]
+];
 
+// -------------------- Validate Expense --------------------
 const validateExpense = [
   body("title").trim().isLength({ min: 1 }).withMessage("Title is required"),
   body("amount").isNumeric().withMessage("Amount must be a number"),
   body("tourId").isNumeric().withMessage("Invalid tour ID"),
-]
+];
 
 module.exports = {
   validateRegister,
   validateLogin,
   validateTour,
   validateExpense,
-}
+};
