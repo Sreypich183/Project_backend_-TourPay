@@ -18,3 +18,25 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 
 ## 📁 Project Structure
 
+
+
+---
+
+## ⚙️ Tech Stack
+
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
+- **ORM**: Sequelize
+- **Auth**: JSON Web Token (JWT)
+- **Validation**: express-validator
+
+---
+
+## 🛠️ Local Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-org/tourpay-backend.git
+cd backend
+
