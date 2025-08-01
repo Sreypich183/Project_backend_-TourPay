@@ -29,3 +29,10 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 2. Connect Axios to backend http://localhost:5000/api
 3. Add some sample pages & UI (login, dashboard, add expense)
 4. Ensure full local development works via:
+
+```bash
+cd backend
+npm install
+
+cd frontend
+npm install
