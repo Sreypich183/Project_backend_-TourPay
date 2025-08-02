@@ -48,20 +48,52 @@ TourPay is a collaborative expense-sharing platform built for group trips and sh
 ```bash
 Project/
 ├── backend/
-│ ├── server.js # Express app entry point
-│ ├── config/ # DB & JWT config
-│ ├── controllers/ # API logic
-│ ├── middleware/ # Auth, validation
-│ ├── models/ # Sequelize models
-│ └── routes/ # API route definitions
+│ ├── config/ 
+│ │   ├── database.js
+│ │   ├── jwt.js
+│ ├── controllers/
+│ │   ├── authController.js
+│ │   ├── expenseController.js
+│ │   ├── tourController.js
+│ │   ├── userController.js
+│ ├── middleware/ 
+│ │   ├── auth.js
+│ │   ├── validation.js
+│ ├── models/
+│ │   ├── Expense.js
+│ │   ├── Tour.js
+│ │   ├── User.js
+│ └── routes/
+│ │   ├── authRoutes.js
+│ │   ├── expenseRoutes.js
+│ │   ├── tourRoutes.js
+│ │   ├── userRoutes.js
+│ ├── server.js 
 ├── frontend/
+│ ├── public/
+│ │   ├── index.html
 │ ├── src/
-│ │ ├── app/ # Redux store & providers
-│ │ ├── components/ # UI components
-│ │ ├── features/ # Slices, services
-│ │ ├── pages/ # Page views
-│ │ └── main.jsx # Entry point
-│ └── vite.config.js
+│ │ ├── components/
+│ │ │   ├── AddExpenseModal.jsx
+│ │ │   ├── AddOptionsModal.jsx
+│ │ │   ├── CreateTourModal.jsx
+│ │ │   ├── JoinTourModal.jsx
+│ │ │   ├── Layout.jsx
+│ │ │   ├── ProtectedRoute.jsx
+│ │ │   ├── TourOptionsMenu.jsx
+│ │ ├── contexts/
+│ │ │   ├── AuthContext.js
+│ │ ├── pages/
+│ │ │   ├── FreeCard.jsx
+│ │ │   ├── Home.jsx
+│ │ │   ├── Login.jsx
+│ │ │   ├── Profile.jsx
+│ │ │   ├── Register.jsx
+│ │ │   ├── Request.jsx
+│ │ │   ├── TourDetail.jsx
+│ │ └── App.jsx
+│ │ └── index.css
+│ │ └── App.jsx 
 └── README.md
 ```
 
@@ -163,4 +195,5 @@ GET /api/expenses/:tourId – List tour expenses
 Contributions are welcome! Please fork the repo, create feature branches, and submit pull requests. Follow the code style and run tests before submitting.
 
 ---
+
 
