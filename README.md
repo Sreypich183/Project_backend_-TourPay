@@ -60,7 +60,6 @@ Project/
 │ │ ├── components/ # UI components
 │ │ ├── features/ # Slices, services
 │ │ ├── pages/ # Page views
-│ │ ├── i18n/ # Translations
 │ │ └── main.jsx # Entry point
 │ └── vite.config.js
 └── README.md
@@ -164,3 +163,4 @@ GET /api/expenses/:tourId – List tour expenses
 Contributions are welcome! Please fork the repo, create feature branches, and submit pull requests. Follow the code style and run tests before submitting.
 
 ---
+
