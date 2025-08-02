@@ -117,8 +117,10 @@ npm install
 ```bash
 DB_HOST=localhost
 DB_USER=root
-DB_PASS=your_password
-DB_NAME=tourpay_db
+DB_PASSWORD=your_password
+DB_NAME=tourpay
+NODE_ENV=development
+PORT=5000
 ```
 - Start the backend
 ```bash
@@ -195,5 +197,6 @@ GET /api/expenses/:tourId – List tour expenses
 Contributions are welcome! Please fork the repo, create feature branches, and submit pull requests. Follow the code style and run tests before submitting.
 
 ---
+
 
 
